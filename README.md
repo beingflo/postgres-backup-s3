@@ -4,6 +4,8 @@ This project provides Docker images to periodically back up a PostgreSQL databas
 
 This is a fork created to support ARM architectures. For this the go-cron dependency was removed and replaced with a simple sleep timer.
 
+> **WARNING:** There are various changes in here to make aws talk to Exoscale, it's untested if backup / restore works against other S3 providers
+
 # Usage
 
 ## Backup
