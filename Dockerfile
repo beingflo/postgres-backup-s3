@@ -1,5 +1,5 @@
 ARG POSTGRES_VERSION
-FROM postgres:${POSTGRES_VERSION}-alpine
+FROM postgres:17-alpine
 
 ADD src/install.sh install.sh
 RUN sh install.sh && rm install.sh && mkdir -p /metrics
