@@ -7,6 +7,7 @@ if [ "$S3_S3V4" = "yes" ]; then
 fi
 
 echo "Starting backup process";
+echo "Running backup every ${SCHEDULE} seconds";
 
 sleep 10;
 
