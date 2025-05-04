@@ -9,6 +9,7 @@ fi
 sleep 5;
 while true
 do
+    echo "Running backup script";
     /bin/sh backup.sh;
     sleep 3600;
 done
