@@ -50,7 +50,7 @@ fi
 if [ -z "$S3_ENDPOINT" ]; then
   aws_args=""
 else
-  aws_args="--endpoint-url $S3_ENDPOINT"
+  aws_args="--endpoint-url "$S3_ENDPOINT/$S3_BUCKET""
 fi
 
 
