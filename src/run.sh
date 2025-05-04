@@ -6,10 +6,13 @@ if [ "$S3_S3V4" = "yes" ]; then
     aws configure set default.s3.signature_version s3v4
 fi
 
-sleep 5;
+echo "Starting backup process";
+
+sleep 10;
+
 while true
 do
     echo "Running backup script";
     /bin/sh backup.sh;
-    sleep 3600;
+    sleep ${SCHEDULE};
 done
