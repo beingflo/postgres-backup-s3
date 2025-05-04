@@ -9,11 +9,9 @@ fi
 echo "Starting backup process";
 echo "Running backup every ${SCHEDULE} seconds";
 
-sleep 10;
-
 while true
 do
+    sleep ${SCHEDULE};
     echo "Running backup script";
     /bin/sh backup.sh;
-    sleep ${SCHEDULE};
 done
